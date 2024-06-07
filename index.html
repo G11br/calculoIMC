@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho-navegacao">
+            <a href="#principal">Home</a>
+            <a href="#sobre">About</a>
+            <a href="">Calculator</a>
+        </nav>
+    </header>
+    <main>
+        <section id="principal" class="principal">
+            <div>
+                <h1>Calculadora de IMC</h1>
+            </div>
+        </section>
+        <section id="sobre" class="sobre">
+            <h2>IMC</h2>
+            <div>
+                <p>
+                    IMC é a sigla para Índice de Massa Corpórea,
+                    parâmetro adotado pela Organização Mundial de
+                    Saúde para calcular o peso ideal de cada pessoa.
+                    O índice é calculado da seguinte maneira: divide-
+                    se o peso do paciente pela sua altura elevada ao
+                    quadrado. Diz-se que o indivíduo tem peso
+                    normal quando o resultado do IMC está entre
+                    18,5 e 24,9.
+                </p>
+                <img src="assets/mulher-imc.jpg" alt="Mulher medindo sua cintura">
+            </div>
+        </section>
+        <section class="calculadora">
+            <h2>Calculadora IMC</h2>
+            <div class="calculadora-conteudo">
+                <div class="calculadora-conteudo-dados">
+                    <label for="altura">Altura:</label>
+                    <input id="altura" type="number" placeholder="1.74m">
+                    
+                    <label for="peso">Peso:</label>
+                    <input id="peso" type="number" placeholder="90kg">
+
+                    <div class="calculadora-conteudo-dados-sexo">
+                        <input id="masculino" type="radio" name="sexo">
+                        <label for="masculino">Masculino</label>
+        
+                        <input id="feminino" type="radio" name="sexo">
+                        <label for="feminino">Feminino</label>
+                    </div>
+
+                    <input id="button" type="button" value="Calcular">
+                </div>
+                <h3 class="calculadora-conteudo-resultado">Seu IMC: <span class="resposta"></span></h3>
+            </div>
+        </section>
+        <section class="tabela">
+            <h2>VEJA A INTERPRETAÇÃO DO IMC</h2>
+            <table class="tabela-tabela">
+                <thead>
+                    <tr>
+                        <th colspan="2">Tabela IMC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Abaixo de 18,5</td>
+                        <td>Abaixo do Peso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 18,6 e 24,9</td>
+                        <td>Peso Ideal</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 25 e 29,9</td>
+                        <td>Levemente Acima do Peso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 30 e 34,9</td>
+                        <td>Obesidade grau I</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 35 e 39,9</td>
+                        <td>Obesidade grau II</td>
+                    </tr>
+                    <tr>
+                        <td>Acima de 40</td>
+                        <td>Obesidade grau III</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

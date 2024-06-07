@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho{
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.426);
+}
+.cabecalho-navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cabecalho-navegacao a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 1.75rem;
+}
+.principal{
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.principal div{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.principal div h1{
+    font-size: 3.5rem;
+    color: black;
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(66, 132, 99);
+    padding: 2%;
+    height: 80vh;
+}
+.sobre h2{
+    font-size: 3rem;
+    height: 10%;
+    text-align: center;
+}
+.sobre div{
+    height: 80%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sobre div p{
+    width: 50%;
+    text-align: justify;
+}
+.sobre div img{
+    width: 30%;
+    border-radius: 25px;
+}
+.calculadora{
+    padding: 1%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.calculadora h2{
+    font-size: 3rem;
+}
+.calculadora-conteudo{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(72, 186, 148);
+    border-radius: 35px;
+}
+.calculadora-conteudo-dados{
+    height: 80%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.calculadora-conteudo-dados input{
+    border-radius: 25px;
+    height: 40px;
+    border: 0;
+    width: 70%;
+    text-align: center;
+}
+.calculadora-conteudo-dados-sexo{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calculadora-conteudo-dados-sexo input{
+    height: 25px;
+}
+.calculadora-conteudo-resultado{
+    width: 45%;
+    text-align: left;
+    font-size: 2.7rem;
+}
+.resposta{
+    color: rgb(230, 61, 0);
+}
+.tabela{
+    padding: 1%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(154, 251, 219);
+}
+.tabela h2{
+    height: 15%;
+    font-size: 3rem;
+
+}
+.tabela-tabela{
+    height: 80%;
+    border-collapse: collapse;
+    background-color: white;
+}
+.tabela-tabela td, th{
+    border: 2px solid black;
+    padding: 1% 2%;
+    font-size: 1.5rem;
+}
